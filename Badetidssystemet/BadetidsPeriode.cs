@@ -91,7 +91,7 @@ namespace Badetidssystemet
             return $"Type: {Type}, UgeDag: {UgeDag}, StartTidspunkt {StartTidspunkt}, SlutTidspunkt: {SlutTidspunkt}";
         }
 
-        public void AddKreds(Kreds kreds)
+        public virtual void AddKreds(Kreds kreds)
         {
             kredserne.Add(kreds.Id, kreds);
             
@@ -101,7 +101,7 @@ namespace Badetidssystemet
         
 
 
-        public void DeleteKreds(string id)
+        public virtual void DeleteKreds(string id)
         {
 
 
